@@ -1,0 +1,115 @@
+>>> pins = {"Tegar":1234,"Ojan":1111,"Firman":2222}
+>>> type(pins["Tegar"])
+<class 'int'>
+>>> pins.keys()
+dict_keys(['Tegar', 'Ojan', 'Firman'])
+>>> pins.values()
+dict_values([1234, 1111, 2222])
+>>> pins["Jisung"] = 3333
+>>> pins
+{'Tegar': 1234, 'Ojan': 1111, 'Firman': 2222, 'Jisung': 3333}
+>>> pins.pop("Firman")
+2222
+>>> pins
+{'Tegar': 1234, 'Ojan': 1111, 'Jisung': 3333}
+>>> pins ["elok"] = 'AB123'
+>>> pins
+{'Tegar': 1234, 'Ojan': 1111, 'Jisung': 3333, 'elok': 'AB123'}
+>>> masukkan = input("Masukkan nama anda :")
+Masukkan nama anda : Tegar
+>>> bilangan = input ("Masukkan angka :")
+Masukkan angka : 12
+>>> print(bilangan)
+ 12
+>>> print(masukkan)
+ Tegar
+>>> type(masukkan)
+<class 'str'>
+>>> bilangan = int (input("masukkan angka :"))
+masukkan angka :80
+>>> type (bilangan)
+<class 'int'>
+>>> print (bilangan**2)
+6400
+
+>>> bilangan = float(input("masukkan angka :"))
+masukkan angka :12.5
+>>> type(bilangan)
+<class 'float'>
+>>> print(bilangan/2)
+6.25
+>>> pins
+{'Tegar': 1234, 'Ojan': 1111, 'Jisung': 3333, 'elok': 'AB123'}
+>>> pins.values()
+dict_values([1234, 1111, 3333, 'AB123'])
+>>> kode = 1234
+>>> kode in pins.values()
+True
+>>> kode = 2222
+>>> kode in pins.values()
+False
+
+>>> if  1<5:
+...     print ("yes")
+... else:
+...     print ("no")
+...
+yes
+>>> if 1==5:
+...     print ("benar")
+... else:
+...     print ("salah")
+...
+salah
+
+>>> user_input = float (input("masukkan angka :"))
+masukkan angka :88
+>>> if user_input > 100:
+...     print ("Greater")
+... else:
+...     print ("Smaller")
+...
+Smaller
+>>>
+>>> if user_input > 100:
+...     print ("Lebih Besar")
+... elif user_input == 100:
+...     print ("sama dengan")
+... else:
+...     print ("Lebih Kecil")
+...
+Lebih Kecil
+
+>>> if user_input > 100:
+...     print("Lebih Besar")
+... elif user_input == 100:
+...     print("Sama Dengan")
+... else:
+...     print("Lebih Kecil")
+...
+Sama Dengan
+>>> def printing():
+...     print("Hello")
+...     print("Dunia")
+...
+>>> printing()
+Hello
+Dunia
+>>> def luas_persegi(sisi):
+...     luas = sisi*sisi
+...     return luas
+...
+>>> luas_persegi(6)
+36
+>>> def luas_segitiga(alas,tinggi):
+...     luas = (alas*tinggi)/2
+...     print("Luas segitiga : %d" %luas)
+...
+>>> luas_segitiga(100,50)
+Luas segitiga : 2500
+>>> def hitung_umur(tahun):
+...     umur = 2019 - tahun
+...     print ("umur saya : %d" %umur)
+...
+>>> hitung_umur(1999)
+umur saya : 20
